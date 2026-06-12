@@ -6,7 +6,7 @@ Beacon is a live AI-powered customer support chat support agent that uses Google
 
 ## Preview
 
-
+![Video](https://github.com/user-attachments/assets/74a21b63-bec7-4c42-a344-32e4aa8fc344)
 
 ---
 
