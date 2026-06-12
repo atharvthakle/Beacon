@@ -75,8 +75,11 @@ npm run dev
 You should see:
 
 ✅ Connected to Redis
+
 ✅ Connected to PostgreSQL database
+
 ✅ Database migrations completed successfully
+
 🚀 Beacon backend running on http://localhost:3001
 
 ### 6. Set up and Run the Frontend
@@ -107,20 +110,21 @@ Open your browser and go to: `http://localhost:3000`
 ### Backend Structure
 
 backend/src/
-├── config/
-│   ├── database.ts      # PostgreSQL connection pool
-│   ├── redis.ts         # Redis client setup
-│   └── migrations.ts    # Auto-runs DB table creation on startup
-├── middleware/
-│   └── validation.ts    # Input validation + global error handler
-├── routes/
-│   └── chat.ts          # POST /chat/message, GET /chat/history/:sessionId
-├── services/
-│   ├── conversation.ts  # DB operations + Redis caching logic
-│   └── llm.ts           # Gemini API integration + prompt design
-├── types/
-│   └── index.ts         # Shared TypeScript interfaces
-└── index.ts             # Express app entry point
+
+    ├── config/
+    │   ├── database.ts      # PostgreSQL connection pool
+    │   ├── redis.ts         # Redis client setup
+    │   └── migrations.ts    # Auto-runs DB table creation on startup
+    ├── middleware/
+    │   └── validation.ts    # Input validation + global error handler
+    ├── routes/
+    │   └── chat.ts          # POST /chat/message, GET /chat/history/:sessionId
+    ├── services/
+    │   ├── conversation.ts  # DB operations + Redis caching logic
+    │   └── llm.ts           # Gemini API integration + prompt design
+    ├── types/
+    │   └── index.ts         # Shared TypeScript interfaces
+    └── index.ts             # Express app entry point
 
 ### How it works
 
@@ -137,11 +141,12 @@ backend/src/
 ### Frontend Structure
 
 frontend/
-├── app/
-│   ├── page.tsx         # Main page
-│   └── layout.tsx       # Root layout
-└── components/
-└── beacon-chat.tsx  # Main chat component with all UI logic
+
+    ├── app/
+    │   ├── page.tsx         # Main page
+    │   └── layout.tsx       # Root layout
+    └── components/
+    └── beacon-chat.tsx  # Main chat component with all UI logic
 
 ### Session Persistence
 
