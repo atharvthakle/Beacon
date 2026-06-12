@@ -4,6 +4,12 @@ Beacon is a live AI-powered customer support chat support agent that uses Google
 
 ---
 
+## Preview
+
+
+
+---
+
 ## Tech Stack
 
 - **Frontend:** Next.js 16 + TypeScript + Tailwind CSS
@@ -156,32 +162,10 @@ frontend/
 
 ---
 
-## UI / Frontend Notes
+## Frontend Notes
 
 - Built with Next.js 16 + Tailwind, generated via v0.dev and iteratively refined
 - Background uses a custom WebGL "Soft Aurora" shader effect (via the `ogl` library) with mouse-reactive movement
 - Custom logo and favicon
-
----
-
-## LLM Notes
-
-**Provider:** Google Gemini 2.5 Flash
-
-**Prompting approach:**
-- A detailed system prompt is injected with Nova Store's full knowledge base (shipping policy, return policy, payment methods, support hours, common issues)
-- Conversation history (last 10 messages) is included with every request for contextual replies
-- The AI is instructed to stay on-topic, be concise, use bullet points, and never make up information
-
-**Cost control assumptions:**
-- Max output tokens capped at 500 per response
-- Only last 10 messages of history sent to the API (not entire conversation)
-- These limits keep costs low while maintaining good conversational context
-
-**Error handling:**
-- Invalid API key → friendly message directing user to support email
-- Rate limit exceeded → asks user to wait and retry
-- Safety filter triggered → asks user to rephrase
-- Any other error → generic friendly error message, never exposes internals
 
 ---
