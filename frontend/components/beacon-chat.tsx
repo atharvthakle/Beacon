@@ -42,7 +42,7 @@ export function BeaconChat() {
         setSessionId(storedSessionId);
         try {
           const response = await fetch(
-            `http://localhost:3001/chat/history/${storedSessionId}`
+            `https://beacon-backend-fkxd.onrender.com/chat/history/${storedSessionId}`
           );
           if (response.ok) {
             const data = await response.json();
