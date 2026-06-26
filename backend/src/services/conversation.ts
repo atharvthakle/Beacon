@@ -49,7 +49,7 @@ export const getConversationHistory = async (conversationId: string): Promise<Me
   // Try cache first
   try {
     const cached = await redisClient.get(`conversation:${conversationId}`);
-    if (cached) {
+    if (cached && typeof cached === 'string') {
       console.log('⚡ Cache hit for conversation:', conversationId);
       return JSON.parse(cached) as Message[];
     }
