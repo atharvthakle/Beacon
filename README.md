@@ -10,6 +10,15 @@ https://github.com/user-attachments/assets/74a21b63-bec7-4c42-a344-32e4aa8fc344
 
 ---
 
+## Live Demo
+
+- **Frontend:** https://beaconai-by-at.vercel.app
+- **Backend:** https://beacon-backend-fkxd.onrender.com
+
+> Note: The backend is hosted on Render's free tier and may take 30-60 seconds to wake up on first request.
+
+---
+
 ## Tech Stack
 
 - **Frontend:** Next.js 16 + TypeScript + Tailwind CSS
@@ -32,7 +41,7 @@ Make sure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/atharvthakle/beacon.git
+git clone https://github.com/atharvthakle/Beacon.git
 cd beacon
 ```
 
