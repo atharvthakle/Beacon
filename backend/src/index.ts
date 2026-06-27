@@ -18,6 +18,7 @@ app.use(cors({
     'http://localhost:3000',
     'http://localhost:4173',
     'https://beacon-beta-dusky.vercel.app',
+    'https://beaconai-by-at.vercel.app',
   ],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
